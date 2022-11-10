@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modelo.css">
+
+</head>
+
+<style>
+    .container-folded {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100px * 1);
+        height: calc(100px * 1);
+        border: 0.5px solid #E4E4E4;
+        border-radius: 4px;
+    }
+
+    .container-folded-paper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(64px * 1);
+        height: calc(64px * 1);
+        padding: 0 0 0 calc(7px * 1);
+    }
+
+    .folded-paper {
+        background: #ddd;
+        position: relative;
+        margin: auto;
+        width: calc(50px * 1);
+        height: calc(64px * 1);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .folded-paper:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-width: 0 calc(20px * 1) calc(20px * 1) 0;
+        border-style: solid;
+        border-color: #aaa #fff;
+        transition: 0.3s;
+        border-radius: 0 0 0 5px;
+    }
+
+    .folder-paper-info {
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: -10px;
+        margin-top: 70%;
+        width: calc(50px * 1);
+        height: calc(20px * 1);
+        border-radius: 4px;
+    }
+
+    .folder-info-text {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+        color: #fff;
+    }
+</style>
+
+<body>
+    <div class="container-folded">
+        <div class="container-folded-paper">
+            <div class="folded-paper">
+                <div class="folder-paper-info">
+                    <span class="folder-info-text">
+                        doc
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
